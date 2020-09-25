@@ -1,0 +1,100 @@
+/* Scrollbar */
+/* From Quassel Wiki: http://sprunge.us/iZGB */
+QScrollBar {
+  background: #2c2c2c;
+  margin: 0;
+}
+
+QScrollBar:vertical, 
+QScrollBar:horizontal {
+  width: 8px;
+}
+
+QScrollBar::handle {
+  padding: 0;
+  margin: 2px;
+  border-radius: 2px;
+  border: 1px solid #74777a;
+  background: #74777a;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+  min-height: 20px;
+  min-width: 0px;
+}
+
+QScrollBar::handle:hover {
+  margin: 1px;
+  border-radius: 3px;
+  background: #268bd2;
+  border-color: #268bd2;
+}
+
+QScrollBar::handle:pressed {
+  background: #268bd2;
+  border-color: #268bd2;
+}
+
+QScrollBar::add-line,
+QScrollBar::sub-line {
+  height: 0px;
+  border: 0px;
+}
+
+QScrollBar::up-arrow,
+QScrollBar::down-arrow {
+  border: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+QScrollBar::add-page,
+QScrollBar::sub-page {
+  background: none;
+}
+
+/* Menubar + Context Menu */
+QMenuBar {
+  background-color: #131313;
+  color: #eeeeee;
+}
+
+QMenuBar::item {
+  background: transparent;
+}
+
+QMenuBar::item:selected {
+  background: #268bd2;
+}
+
+QMenuBar::item:pressed {
+  background: #268bd2;
+}
+
+QMenu {
+  background-color: #131313;
+  color: #eeeeee;
+}
+
+QMenuBar::item {
+  background: transparent;
+}
+
+QMenu::item:selected {
+  background-color: #268bd2;
+}
+
+/* Tabbar */
+TabbedViewContainer {
+  background: #31363b;
+}
+
+ViewContainerTabBar {
+  background: #31363b;
+}
+
+QTabBar {
+  background: #31363b;
+  color: #eeeeee;
+}
