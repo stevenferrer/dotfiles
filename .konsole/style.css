@@ -1,3 +1,5 @@
+/* Made for KDE Dark Breeze theme and dark pastel konsole theme */
+
 /* Scrollbar */
 /* From Quassel Wiki: http://sprunge.us/iZGB */
 QScrollBar {
@@ -87,14 +89,30 @@ QMenu::item:selected {
 
 /* Tabbar */
 TabbedViewContainer {
-  background: #31363b;
+  background: #2c2c2c;
 }
 
 ViewContainerTabBar {
-  background: #31363b;
+  background: #2c2c2c;
 }
 
-QTabBar {
-  background: #31363b;
-  color: #eeeeee;
+
+QTabBar::tab {
+    background: #31363b;
+    border-bottom: 1px solid #5b5b5b;
+    color: #eee;
+    padding: 5px;
 }
+
+QTabBar::tab:hover {
+    border-bottom: 1px solid #268bd2;
+}
+
+QTabBar::tab:selected  {
+  background: #2c2c2c;
+  color: #eee;
+  border-style: solid;
+  border-color: #5b5b5b;
+  border-width: 1px 1px 0 1px;
+}
+
