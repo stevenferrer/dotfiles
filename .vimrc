@@ -1,15 +1,24 @@
-"
-" A (not so) minimal vimrc.
-"
-
-" You want Vim, not vi. When Vim finds a vimrc, 'nocompatible' is set anyway.
-" We set it explicitely to make our position clear!
 set nocompatible
 
-set nu                      " Show line numbers
+call plug#begin('~/.vim/plugged')
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --all' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'preservim/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'dense-analysis/ale'
+Plug 'itchyny/lightline.vim'
+Plug 'joshdick/onedark.vim'
+Plug 'git@github.com:sheerun/vim-polyglot.git'
+call plug#end()
 
+set nu                      " Show line numbers
 filetype plugin indent on   " Load plugins according to detected filetype.
 syntax on                   " Enable syntax highlighting.
+
+colorscheme onedark         " Use onedark color schem
+let g:lightline = {
+      \ 'colorscheme': 'onedark',
+      \ }
 
 set autoindent              " Indent according to previous line.
 set expandtab               " Use spaces instead of tabs.
