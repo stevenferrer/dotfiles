@@ -94,7 +94,6 @@ ViewContainerTabBar {
   background: #2c2c2c;
 }
 
-
 QTabBar::tab {
     background: #31363b;
     border-bottom: 1px solid #5b5b5b;
