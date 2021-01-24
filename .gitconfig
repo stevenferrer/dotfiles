@@ -1,0 +1,7 @@
+[user]
+	email = steven.r.ferrer@gmail.com
+	name = Steven Ferrer
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
