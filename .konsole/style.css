@@ -5,7 +5,7 @@ QScrollBar {
   margin: 0;
 }
 
-QScrollBar:vertical, 
+QScrollBar:vertical,
 QScrollBar:horizontal {
   width: 8px;
 }
@@ -86,30 +86,35 @@ QMenu::item:selected {
 }
 
 /* Tabbar */
-TabbedViewContainer {
-  background: #2c2c2c;
+QTabWidget::pane,
+QTabWidget::tab-bar {
+  background-color: #31363b;
 }
 
-ViewContainerTabBar {
-  background: #2c2c2c;
+QTabBar,
+QTabBar::tab {
+  background-color: #31363b;
+  border-bottom: 1px solid #5b5b5b;
+  color: #eee;
 }
 
 QTabBar::tab {
-    background: #31363b;
-    border-bottom: 1px solid #5b5b5b;
-    color: #eee;
-    padding: 5px;
+  padding: 3px;
+  min-width: 200px;
+  border-bottom: 1px solid #5b5b5b;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
 }
 
 QTabBar::tab:hover {
-    border-bottom: 1px solid #268bd2;
+  border-bottom: 1px solid #94bff0;
 }
 
-QTabBar::tab:selected  {
-  background: #2c2c2c;
+QTabBar::tab:selected {
+  font-weight: bold;
   color: #eee;
+  background: #2c2c2c;
   border-style: solid;
   border-color: #5b5b5b;
   border-width: 1px 1px 0 1px;
 }
-
